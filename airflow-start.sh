@@ -1,8 +1,3 @@
-tput bold; tput setaf 5;
-echo "LET'S SET ENVIRONMENT VARIABLES"
-source variables.env
-tput bold; tput setaf 10;
-
 echo $''
 tput bold; tput setaf 5;
 echo 'INIT AIRFLOW'

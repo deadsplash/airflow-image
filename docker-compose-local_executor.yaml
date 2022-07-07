@@ -3,7 +3,7 @@ x-airflow-common:
   &airflow-common
   image: apache/airflow:2.2.5-python3.8
   env_file:
-     - vars.env
+     - variables.env
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
@@ -161,7 +161,7 @@ services:
         exec /entrypoint airflow version
     # yamllint enable rule:line-length
     env_file:
-      - vars.env
+      - variables.env
     environment:
       <<: *airflow-common-env
       _AIRFLOW_DB_UPGRADE: 'true'
