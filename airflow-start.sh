@@ -9,4 +9,3 @@ echo 'RUN AIRFLOW'
 echo $''
 docker-compose -f docker-compose-local_executor.yaml up -d
 tput setaf 9;
-echo 'AIRFLOW_VAR_TEST_VARIABLE:' $AIRFLOW_VAR_TEST_VARIABLE
