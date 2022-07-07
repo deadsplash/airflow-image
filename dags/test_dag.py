@@ -27,7 +27,7 @@ def python_func():
     default_args=default_args,
     start_date=datetime.datetime(2022, 6, 3),
     max_active_runs=1,
-    catchup=True,
+    catchup=False,
     concurrency=3,
     tags=['test', 'python']
 )
